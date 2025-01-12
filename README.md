@@ -1,4 +1,3 @@
-<!DOCTYPE http-equiv="" ml>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
