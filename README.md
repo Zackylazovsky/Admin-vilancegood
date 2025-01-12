@@ -11,9 +11,8 @@
 <body>
   <div class="container text-center my-5">
     <h1 class="text-primary fw-bold">Struktur Vilancegood</h1>
-    <p class="text-muted mb-5">Susunan admin yang ada di Vilanegood</p>
-
-    <!-- Owner -->
+    <p class="text-muted mb-5">Susunan admin yang ada di Vilanegood< 
+      <!-- Owner -->
     <div class="row justify-content-center mb-5">
       <div class="col-lg-8">
         <div class="card owner-card shadow position-relative">
@@ -25,8 +24,7 @@
         </div>
       </div>
     </div>
-
-    <!-- Admins -->
+  <!-- Admins -->
     <div class="row justify-content-center g-4">
       <!-- Admin 1 -->
       <div class="col-md-4 col-lg-3">
