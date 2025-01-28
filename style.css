@@ -1,117 +1,134 @@
-/* General Body Styling */
+div {
+     text-align: center;
+     margin: 20px;
+}
 body {
-  background-color: #f8f9fa;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
+     background-image: url('back.jpg');
+     background-size: 400px 1600px;
+     background-position: center;
+     background-repeat: no-repeat;
+     width: 100%;
+     text-align: center;
+     padding: 5px 0;
 }
-
-/* Title Styling */
 h1 {
-  font-size: 3rem;
-  color: #0d6efd;
-  margin-bottom: 1rem;
+    font-family: cursive, bold;
+    font-size: 40px;
+}
+.border1 {
+    border: 1px solid black;
+    border-radius: 15px;
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.border2 {
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    font-family: cursive, bold;
+    font-size: 40px;
+}
+.section{
+    text-align: left;
+    font-size: 10px;
+}
+.section2{
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.profil1{
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.profil2{
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.profil3{
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.profil4{
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.foto-profil1 {
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.foto-profil2 {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+/* Navbar style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00a896;
+  padding: 10px 10px;
 }
 
-p {
-  font-size: 1rem;
-  color: #6c757d;
-  margin-bottom: 2rem;
+.navbar .logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-/* Card General Styling */
-.card {
-  border-radius: 15px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* Profile Image Styling */
-.card-img-top {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #0d6efd;
-  margin-top: -60px;
-  background-color: #fff;
-}
-
-/* Owner Card Styling */
-.owner-card {
-  background-color: #0d6efd;
-  color: #fff;
+.nav-links li {
   position: relative;
-  padding: 3rem 1rem;
-  text-align: center;
 }
 
-.owner-card .card-body {
-  padding-top: 2rem;
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 10px;
+  transition: background 0.3s;
 }
 
-/* Admin Card Styling */
-.admin-card {
-  background-color: #fff;
-  color: #0d6efd;
-  text-align: center;
-  padding-top: 2rem;
+.nav-links a:hover {
+  background-color: #028090;
+  border-radius: 5px;
 }
 
-.admin-card .card-body {
-  padding: 1.5rem;
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Card Title Styling */
-.card-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 10px;
-  color: inherit;
+.dropdown-menu li a {
+  color: #333;
+  padding: 8px 10px;
+  display: block;
+  border-radius: 5px;
 }
 
-/* Card Text Styling */
-.card-text {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: inherit;
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  .card-img-top {
-    width: 100px;
-    height: 100px;
-    border: 3px solid #0d6efd;
-  }
-
-  .card-title {
-    font-size: 1.25rem;
-  }
-
-  .card-text {
-    font-size: 1rem;
-  }
-
-  /* Adjust card sizes for small screens */
-  .col-md-4 {
-    flex: 0 0 48%;
-    max-width: 48%;
-  }
-}
-
-@media (max-width: 480px) {
-  .col-md-4 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
